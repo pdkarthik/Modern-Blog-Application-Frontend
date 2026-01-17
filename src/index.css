@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 20% 98%;
+    --foreground: 24 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 24 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 10% 10%;
+
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 30 15% 94%;
+    --secondary-foreground: 24 10% 20%;
+
+    --muted: 30 10% 96%;
+    --muted-foreground: 24 5% 45%;
+
+    --accent: 24 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 15% 90%;
+    --input: 30 15% 90%;
+    --ring: 24 95% 53%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 24 10% 10%;
+    --sidebar-primary: 24 95% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 30 15% 96%;
+    --sidebar-accent-foreground: 24 10% 10%;
+    --sidebar-border: 30 15% 92%;
+    --sidebar-ring: 24 95% 53%;
+
+    /* Custom tokens */
+    --blog-card-hover: 30 20% 97%;
+    --category-finance: 142 70% 45%;
+    --category-tech: 217 90% 60%;
+    --category-health: 340 80% 55%;
+    --category-travel: 45 90% 50%;
+    --category-default: 24 95% 53%;
+  }
+
+  .dark {
+    --background: 24 10% 10%;
+    --foreground: 30 20% 98%;
+
+    --card: 24 10% 14%;
+    --card-foreground: 30 20% 98%;
+
+    --popover: 24 10% 14%;
+    --popover-foreground: 30 20% 98%;
+
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 24 10% 20%;
+    --secondary-foreground: 30 20% 90%;
+
+    --muted: 24 10% 18%;
+    --muted-foreground: 30 10% 60%;
+
+    --accent: 24 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 24 10% 20%;
+    --input: 24 10% 20%;
+    --ring: 24 95% 53%;
+
+    --sidebar-background: 24 10% 12%;
+    --sidebar-foreground: 30 20% 98%;
+    --sidebar-primary: 24 95% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 24 10% 18%;
+    --sidebar-accent-foreground: 30 20% 98%;
+    --sidebar-border: 24 10% 20%;
+    --sidebar-ring: 24 95% 53%;
+
+    --blog-card-hover: 24 10% 16%;
+    --category-finance: 142 70% 45%;
+    --category-tech: 217 90% 60%;
+    --category-health: 340 80% 55%;
+    --category-travel: 45 90% 50%;
+    --category-default: 24 95% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

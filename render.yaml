@@ -1,0 +1,25 @@
+services:
+  # Backend API - JSON Server (Deploy this first)
+  - type: web
+    name: ca-monk-blog-api
+    env: node
+    plan: free
+    buildCommand: cd Frontend-Interview && npm install
+    startCommand: cd Frontend-Interview && npx json-server --watch db.json --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+  # Frontend - Static Site (Deploy after backend)
+  - type: static
+    name: ca-monk-blog-frontend
+    buildCommand: cd Frontend-Interview && npm install && npm run build
+    staticPublishPath: ./Frontend-Interview/dist
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: ca-monk-blog-api
+          property: host
+        # Note: You may need to manually set this to: https://ca-monk-blog-api.onrender.com
+        # after the backend service is deployed
