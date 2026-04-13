@@ -78,8 +78,8 @@
 
 1. **Clone and install**:
 ```bash
-git clone <YOUR_REPOSITORY_URL>
-cd Frontend-Interview
+git clone https://github.com/pdkarthik/Modern-Blog-Application-Frontend.git
+cd Modern-Blog-Application-Frontend
 npm install
 ```
 
