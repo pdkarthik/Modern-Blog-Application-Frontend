@@ -1,9 +1,9 @@
-# 📝 CA Monk Blog Application
+# 📝 Modern Blog Application Frontend
 ## 🌐 Live Demo
 [View Live Application] 🔗 https://ca-monk-blog-frontend.onrender.com
 
 
-A modern blog management application built with React, TypeScript, and Vite for the Frontend Developer Intern position at CA Monk.
+> **A high-performance, responsive user interface built for reading and managing technical content.**
 
 ---
 
@@ -180,10 +180,4 @@ Frontend-Interview/
 
 ---
 
-## 📄 License
-
-Private project for CA Monk Frontend Developer Intern position.
-
----
-
-**Built with ❤️ for CA Monk**
+**Built with ❤️**
